@@ -1,5 +1,5 @@
 import { Text, View, StyleSheet } from "react-native"
-import Icon from 'react-native-vector-icons/Entypo';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 function Textperso({navigation}) {
   
@@ -15,7 +15,7 @@ function Textperso({navigation}) {
      width = {340}
                 backgroundColor= '#e84393'
                 color = "pink"
-                name={Platform.OS === "android" ? "home" : "home-city"}
+                name={Platform.OS === "android" ? "home" : "ios-home-outline"}
                 size = {35}
                 onPress={() => navigation.navigate('Home')}
                 iconStyle = {{marginLeft : 150}}

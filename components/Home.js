@@ -1,6 +1,7 @@
 import { View, StyleSheet, Text} from "react-native"
 import Icon from 'react-native-vector-icons/Ionicons';
-import Icon2 from 'react-native-vector-icons/Entypo';
+import Icon2 from 'react-native-vector-icons/Ionicons';
+
 
 function Home({navigation}) {
   return (
@@ -14,7 +15,7 @@ function Home({navigation}) {
           
                 backgroundColor= '#e84393'
                 color = "pink"
-                name='flower'
+                name={Platform.OS === "android" ? "flower" : "ios-flower-outline"}
                 size = {35}
                 onPress={() => navigation.navigate('Image')}
                 iconStyle = {{marginLeft : 50}}
@@ -25,7 +26,7 @@ function Home({navigation}) {
                 backgroundColor= '#ef5777'
                 color = "pink"
                 size = {35}
-                name='text'
+                name={Platform.OS === "android" ? "document-text" : "ios-text-sharp"}
                 onPress={() => navigation.navigate('Texte')}
                 iconStyle = {{marginLeft : 50}}
             />
