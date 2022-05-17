@@ -1,0 +1,1 @@
+il s'agit de la maniere Stack.navigator et navigation.navigate. Il existe une maniere moins chiante avec TabButton.
