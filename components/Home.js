@@ -1,4 +1,4 @@
-import { View, StyleSheet, Text} from "react-native"
+import { View, StyleSheet, Text, Platform} from "react-native"
 import Icon from 'react-native-vector-icons/Ionicons';
 import Icon2 from 'react-native-vector-icons/Ionicons';
 
@@ -11,8 +11,7 @@ function Home({navigation}) {
         </View>
         <View style = {styles.btnContainer}>
         <Icon.Button
-          width = {170}
-          
+                width = {170}
                 backgroundColor= '#e84393'
                 color = "pink"
                 name={Platform.OS === "android" ? "flower" : "ios-flower-outline"}
@@ -21,7 +20,6 @@ function Home({navigation}) {
                 iconStyle = {{marginLeft : 50}}
            />
           <Icon2.Button
-         
                 width = {170}
                 backgroundColor= '#ef5777'
                 color = "pink"
